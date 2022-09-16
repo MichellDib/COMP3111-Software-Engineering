@@ -4,11 +4,18 @@
 package lab;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    
+    public static void main(String[] args) {
+
+        App app = new App();
+        if(app.someAppMethod())
+        System.out.println("Hello World");
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public boolean someAppMethod() {
+        return true;
+    }
+    public String getGreeting() {
+        return "Hello World!";
     }
 }
